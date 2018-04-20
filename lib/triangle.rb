@@ -8,7 +8,7 @@ class Triangle
   end
 
   def kind
-    
+    validation
     if side1 == side2 && side2 == side3
       :equilateral
     elsif
@@ -18,7 +18,7 @@ class Triangle
       side1 != side2 && side1 != side3
       :scalene
     end #if side1 == side2...
-    validation
+
   end #def kind
 
   def validation
